@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|C:\\Mac\\Home\\Desktop\\WinFormsApp3\\winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\presenter\\plcfuntion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\presenter\\plcfuntion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\presenter\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\presenter\\popuppresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\model\\plcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\model\\plcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\model\\popupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\model\\popupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\viewinterface\\ipopupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\viewinterface\\ipopupview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\viewinterface\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\viewinterface\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\mac\\home\\desktop\\winformsapp3\\winformsapp2\\view\\popup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\popup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 74,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Popup.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Popup.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.cs [\uB514\uC790\uC778]*",
+              "RelativeToolTip": "WinFormsApp2\\View\\Popup.cs [\uB514\uC790\uC778]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:12:04.578Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PopupPresenter.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\PopupPresenter.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Presenter\\PopupPresenter.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\PopupPresenter.cs",
+              "RelativeToolTip": "WinFormsApp2\\Presenter\\PopupPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:16:11.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlcFuntion.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\PlcFuntion.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Presenter\\PlcFuntion.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\PlcFuntion.cs",
+              "RelativeToolTip": "WinFormsApp2\\Presenter\\PlcFuntion.cs",
+              "ViewState": "AgIAABUAAAAAe5mZmZklwC4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:16:29.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IMainView.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\ViewInterface\\IMainView.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\ViewInterface\\IMainView.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\ViewInterface\\IMainView.cs",
+              "RelativeToolTip": "WinFormsApp2\\ViewInterface\\IMainView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:22:28.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Popup.Designer.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Popup.Designer.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.Designer.cs*",
+              "RelativeToolTip": "WinFormsApp2\\View\\Popup.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:22:21.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlcModel.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Model\\PlcModel.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Model\\PlcModel.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Model\\PlcModel.cs",
+              "RelativeToolTip": "WinFormsApp2\\Model\\PlcModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:16:44.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Popup.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Popup.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Popup.cs*",
+              "RelativeToolTip": "WinFormsApp2\\View\\Popup.cs*",
+              "ViewState": "AgIAAFIAAACIZmZmZmYswCUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:11:34.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Form1.cs [\uB514\uC790\uC778]*",
+              "RelativeToolTip": "WinFormsApp2\\View\\Form1.cs [\uB514\uC790\uC778]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:57:14.455Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\View\\Form1.cs*",
+              "RelativeToolTip": "WinFormsApp2\\View\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:22:16.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Presenter\\MainPresenter.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Presenter\\MainPresenter.cs",
+              "RelativeToolTip": "WinFormsApp2\\Presenter\\MainPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:16:40.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPopupView.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\ViewInterface\\IPopupView.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\ViewInterface\\IPopupView.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\ViewInterface\\IPopupView.cs",
+              "RelativeToolTip": "WinFormsApp2\\ViewInterface\\IPopupView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:21:31.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PopupModel.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Model\\PopupModel.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Model\\PopupModel.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\WinFormsApp3\\WinFormsApp2\\Model\\PopupModel.cs",
+              "RelativeToolTip": "WinFormsApp2\\Model\\PopupModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T06:16:42.504Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 56,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
