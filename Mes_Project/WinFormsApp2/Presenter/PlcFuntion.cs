@@ -24,55 +24,78 @@ public class PlcFunction
     private CancellationTokenSource _cts;
     private Form1 _form;
     public int result;
+
+    
+
     public PlcFunction(Form1 form)
     {
         _form = form;
     }
     public void StartReading()
     {
-        
-            if (_cts != null)
-            {
-                throw new InvalidOperationException("PLC 데이터 읽기가 이미 실행 중입니다.");
-            }
+        //if (_cts != null)
+        //{
+        //    MessageBox.Show("PLC 데이터 읽기가 이미 실행 중입니다.");
+        //    return;
+        //}
 
+        try
+        {
+            _plc.ActLogicalStationNumber = (int)Popup.StationNumber;
+
+            int connectionResult = _plc.Open();
+            if (connectionResult != 0)
+            {
+                throw new InvalidOperationException("PLC와 연결되지 않았습니다. 연결 상태를 확인하세요.");
+            }
+            
+            
             _cts = new CancellationTokenSource();
             Task.Run(() => ReadPlcData(_cts.Token), _cts.Token);
-        
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"PLC 시작 중 오류 발생: {ex.Message}");
+        }
     }
 
     public void StopReading()
     {
-        //_plc.SetDevice("M10", 0);
-        _plc.SetDevice("M12", Form1.mode);
-        _plc.SetDevice("M11", 1);
-        _cts.Cancel(); // 작업 취소 요청
-        _cts = null;   // 작업 상태 초기화
+        //if (_cts == null)
+        //{
+        //    MessageBox.Show("PLC 데이터 읽기가 실행 중이지 않습니다.");
+        //    return;
+        //}
         
+        try
+        {
+            _plc.SetDevice("M11", 1);
+            _cts.Cancel();
+            _cts = null;
+            _plc.Close();
+            MessageBox.Show("PLC 데이터 읽기가 중지되었습니다.");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"PLC 정지 중 오류 발생: {ex.Message}");
+        }
     }
 
     private void ReadPlcData(CancellationToken token)
     {
         try
         {
-            // Logical Station Number 설정
-            _plc.ActLogicalStationNumber = (int)Popup.StationNumber;
 
-            // PLC 연결
-            int result = _plc.Open();
-            if (result != 0) // PLC 연결 상태 확인
-            {
-                throw new InvalidOperationException("PLC와 연결되지 않았습니다. 연결 상태를 확인하세요.");
-            }
 
-            int temp;
+            _plc.SetDevice("M12", Form1.mode);
             _plc.SetDevice("M10", 1);
-            //_plc.SetDevice("M11", 0);
+            int temp;
 
-            // 데이터 읽기 루프
             while (!token.IsCancellationRequested)
             {
-                // 데이터 읽기 및 static 속성 설정
+    
+
+                // PLC 데이터 읽기
                 _plc.GetDevice("X20", out temp);
                 CurrentData.X20 = temp;
 
@@ -97,57 +120,23 @@ public class PlcFunction
                 _plc.GetDevice("Y43", out temp);
                 CurrentData.Y43 = temp;
 
+                
 
-                _form.label14.Text = CurrentData.D2.ToString();
-
-                if (int.TryParse(_form.label13.Text, out int number))
+                // UI 업데이트는 Invoke를 사용
+                _form.Invoke((MethodInvoker)(() =>
                 {
-                    if (CurrentData.D2.HasValue)
+                    _form.label14.Text = CurrentData.D2?.ToString() ?? "0";
+
+                    if (int.TryParse(_form.label13.Text, out int number))
                     {
-                        result = number - CurrentData.D2.Value;
-                        _form.label8.Text = result.ToString(); // 결과를 label14에 출력
+                        result = number - (CurrentData.D2 ?? 0);
+                        _form.label8.Text = result.ToString();
                     }
-                    else
-                    {
-                        result = 0 - CurrentData.D2.Value;
-                        _form.label8.Text = result.ToString(); // 결과를 label14에 출력
-                    }
-                }
 
-                if (CurrentData.Y41 == 1 && CurrentData.Y42 == 1 && CurrentData.Y43 == 1)
-                {
-                    _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
-                }
-                else if (CurrentData.Y41 == 1)
-                {
-                    _form.tableLayoutPanel17.BackColor = Color.Red;
-                    _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
-                }
-                else if (CurrentData.Y42 == 1)
-                {
-                    _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel18.BackColor = Color.Red;
-                    _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
-                }
-                else if (CurrentData.Y43 == 1)
-                {
-                    _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
-                    _form.tableLayoutPanel19.BackColor = Color.Red;
-                }
+                    UpdateTableColors();
+                }));
 
-
-
-
-
-
-                Console.WriteLine("PLC 데이터가 업데이트되었습니다.");
-                // 1초 대기
-                Thread.Sleep(1000);
-
+                Thread.Sleep(500); // 1초 대기
             }
         }
         catch (OperationCanceledException)
@@ -156,11 +145,35 @@ public class PlcFunction
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"PLC 데이터 읽기 중 오류 발생: {ex.Message}");
+            MessageBox.Show($"PLC 데이터 읽기 중 오류 발생: {ex.Message}");
         }
-        finally
+    }
+
+    private void UpdateTableColors()
+    {
+        if (CurrentData.Y41 == 1 && CurrentData.Y42 == 1 && CurrentData.Y43 == 1)
         {
-           
+            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+        }
+        else if (CurrentData.Y41 == 1)
+        {
+            _form.tableLayoutPanel17.BackColor = Color.Red;
+            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+        }
+        else if (CurrentData.Y42 == 1)
+        {
+            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel18.BackColor = Color.Red;
+            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+        }
+        else if (CurrentData.Y43 == 1)
+        {
+            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel19.BackColor = Color.Red;
         }
     }
 }
