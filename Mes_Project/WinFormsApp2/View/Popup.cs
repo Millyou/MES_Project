@@ -10,12 +10,22 @@ namespace WinFormsApp2
     public partial class Popup : Form, IPopupView
     {
         private readonly PopupPresenter _presenter;
+        private string SelectedItem;
         public static int? StationNumber { get; set; }
+        public static string SelectedPort { get; set; }
+        public static bool IsPortComboEnabled { get; set; } = true; // 초기 상태는 true
         public Popup(PlcModel plcModel)
         {
             InitializeComponent();
             _presenter = new PopupPresenter(this, plcModel);
             _presenter.LoadStations(); // 팝업 창 로드시 Station 로드
+
+            if (!string.IsNullOrEmpty(SelectedPort) && PortCombo.Items.Contains(SelectedPort))
+            {
+                PortCombo.SelectedItem = SelectedPort;
+                
+            }
+            PortCombo.Enabled = IsPortComboEnabled;
         }
 
         public void PopulatePortCombo(List<string> ports)
@@ -32,6 +42,7 @@ namespace WinFormsApp2
             if (!string.IsNullOrEmpty(selectedPort) && PortCombo.Items.Contains(selectedPort))
             {
                 PortCombo.SelectedItem = selectedPort;
+                
             }
         }
 
@@ -48,10 +59,13 @@ namespace WinFormsApp2
 
             // Station 번호 추출 및 스태틱 속성에 저장
             StationNumber = int.Parse(selectedStation.Replace("Station ", "")); // e.g., 1
+            SelectedPort = selectedStation; // 
             MessageBox.Show("연결이 되었습니다.");
             // 선택된 Station 확인
             Console.WriteLine($"선택된 Station 번호: {StationNumber}");
 
+            PortCombo.Enabled = false;
+            IsPortComboEnabled = false; // PortCombo 비활성화 상태 저장
 
         }
         public void DisconnectBtn_Click(object sender, EventArgs e)
@@ -61,8 +75,11 @@ namespace WinFormsApp2
                 ShowErrorMessage("연결된 PLC가 없습니다.");
                 return;
             }
+            SelectedPort = null; // 저장된 데이터 삭제
             StationNumber = null;
             MessageBox.Show("연결이 해제 되었습니다.");
+            IsPortComboEnabled = true; // PortCombo 활성화 상태 저장
+            PortCombo.Enabled = true;
         }
 
         public void SetControlsEnabled(bool portComboEnabled, bool connectionBtnEnabled, bool disconnectBtnEnabled)

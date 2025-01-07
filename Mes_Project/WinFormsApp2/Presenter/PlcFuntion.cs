@@ -1,10 +1,16 @@
 ﻿using ActUtlType64Lib;
 using ActUtlTypeLib;
+using MQTTnet.Client;
+using MQTTnet;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2;
+using WinFormsApp2.Presenter;
+using MQTTnet.Protocol;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using MQTTnet.Server;
 
 public static class CurrentData
 {
@@ -24,14 +30,20 @@ public class PlcFunction
     private CancellationTokenSource _cts;
     private Form1 _form;
     public int result;
+    private CurrentDataPublisher _dataPublisher;
 
-    
 
     public PlcFunction(Form1 form)
     {
         _form = form;
+        _dataPublisher = new CurrentDataPublisher(); // MQTT Publisher 초기화
+        
     }
-    public void StartReading()
+
+
+
+
+    public async void StartReading()
     {
         //if (_cts != null)
         //{
@@ -42,6 +54,8 @@ public class PlcFunction
         try
         {
             _plc.ActLogicalStationNumber = (int)Popup.StationNumber;
+            // MQTT 연결 초기화
+            await _dataPublisher.InitializeAndPublishAsync();
 
             int connectionResult = _plc.Open();
             if (connectionResult != 0)
@@ -49,7 +63,9 @@ public class PlcFunction
                 throw new InvalidOperationException("PLC와 연결되지 않았습니다. 연결 상태를 확인하세요.");
             }
             
-            
+               
+        
+
             _cts = new CancellationTokenSource();
             Task.Run(() => ReadPlcData(_cts.Token), _cts.Token);
         }
@@ -59,7 +75,7 @@ public class PlcFunction
         }
     }
 
-    public void StopReading()
+    public async void StopReading()
     {
         //if (_cts == null)
         //{
@@ -69,6 +85,8 @@ public class PlcFunction
         
         try
         {
+            var dataPublisher = new CurrentDataPublisher();
+            await dataPublisher.DisconnectAsync();
             _plc.SetDevice("M11", 1);
             _cts.Cancel();
             _cts = null;
@@ -81,11 +99,11 @@ public class PlcFunction
         }
     }
 
-    private void ReadPlcData(CancellationToken token)
+    private async void ReadPlcData(CancellationToken token)
     {
         try
         {
-
+            
 
             _plc.SetDevice("M12", Form1.mode);
             _plc.SetDevice("M10", 1);
@@ -136,7 +154,13 @@ public class PlcFunction
                     UpdateTableColors();
                 }));
 
+                // CurrentData를 MQTT로 전송
+                await _dataPublisher.PublishCurrentDataAsync();
+
+
+
                 Thread.Sleep(500); // 1초 대기
+
             }
         }
         catch (OperationCanceledException)

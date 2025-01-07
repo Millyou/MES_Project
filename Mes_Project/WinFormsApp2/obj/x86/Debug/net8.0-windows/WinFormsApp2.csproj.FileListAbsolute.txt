@@ -87,3 +87,9 @@ C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\obj\x86\Debug\net8.0-wi
 C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\obj\x86\Debug\net8.0-windows\WinFormsApp2.pdb
 C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\obj\x86\Debug\net8.0-windows\WinFormsApp2.genruntimeconfig.cache
 C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\obj\x86\Debug\net8.0-windows\ref\WinFormsApp2.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\MQTTnet.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\MQTTnet.Extensions.ManagedClient.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\System.Text.Json.dll
+C:\Mac\Home\Desktop\MES_Project\Mes_Project\WinFormsApp2\bin\x86\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

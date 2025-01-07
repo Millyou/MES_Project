@@ -49,8 +49,8 @@ namespace WinFormsApp2
                 EndBt.BackColor = Color.FromArgb(224, 224, 224);
                 MessageBox.Show("생산이 시작됩니다.");
                 _plcFuntion.StartReading(); //데이터 불러오기 시작(별도 쓰레드)
-                MessageBox.Show($"{Popup.StationNumber}");
-
+                startLbl.Text = DateTime.Now.ToString("HH:mm:ss");
+                
             }
             else MessageBox.Show("PLC 연결 상태를 확인 해주세요.");
         }
