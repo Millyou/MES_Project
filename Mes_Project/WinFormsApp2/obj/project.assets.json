@@ -44,6 +44,36 @@
           }
         }
       },
+      "NModbus.Serial/3.0.81": {
+        "type": "package",
+        "dependencies": {
+          "NModbus": "3.0.81",
+          "System.IO.Ports": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/NModbus.Serial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/NModbus.Serial.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus4/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NModbus4.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/NModbus4.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1350,6 +1380,38 @@
         "nmodbus.nuspec"
       ]
     },
+    "NModbus.Serial/3.0.81": {
+      "sha512": "6IISxvysZRaPkUJr52SVLdXqQwtrGtRmOnMbmSsnvjQnTxAUif/NihNC7Zbi4dvzUTDtlg3H7reZIBkUAHupjg==",
+      "type": "package",
+      "path": "nmodbus.serial/3.0.81",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net46/NModbus.Serial.dll",
+        "lib/net46/NModbus.Serial.xml",
+        "lib/net6.0/NModbus.Serial.dll",
+        "lib/net6.0/NModbus.Serial.xml",
+        "lib/netstandard2.0/NModbus.Serial.dll",
+        "lib/netstandard2.0/NModbus.Serial.xml",
+        "nmodbus.serial.3.0.81.nupkg.sha512",
+        "nmodbus.serial.nuspec"
+      ]
+    },
+    "NModbus4/2.1.0": {
+      "sha512": "hGoxVFImyP2UC/vyaBjS3ZCLEqn3nqDWOfiePUfSTPpI4EhF4xUe6VnQ5W6m9oFK/6unKAaWQZh89WE+I31Spw==",
+      "type": "package",
+      "path": "nmodbus4/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NModbus4.pdb",
+        "lib/net40/NModbus4.dll",
+        "lib/net40/NModbus4.xml",
+        "nmodbus4.2.1.0.nupkg.sha512",
+        "nmodbus4.nuspec"
+      ]
+    },
     "runtime.android-arm.runtime.native.System.IO.Ports/9.0.0": {
       "sha512": "zF8HT4aoFZkWF4OxhFLxUNEfoIjyILg0aQhgIR3m+dbLE4yadMd7kdctMvPhYYaVpnilmBCIjiQsrxH4UC/JxQ==",
       "type": "package",
@@ -2051,6 +2113,8 @@
       "MQTTnet >= 4.3.7.1207",
       "MQTTnet.Extensions.ManagedClient >= 4.3.7.1207",
       "NModbus >= 3.0.81",
+      "NModbus.Serial >= 3.0.81",
+      "NModbus4 >= 2.1.0",
       "System.IO.Ports >= 9.0.0",
       "System.Text.Json >= 9.0.0"
     ]
@@ -2062,11 +2126,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mac\\Home\\Desktop\\MES_Project\\Mes_Project\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Mac\\Home\\Desktop\\프로젝트\\Mes_Project\\WinFormsApp2\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "C:\\Mac\\Home\\Desktop\\MES_Project\\Mes_Project\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectPath": "C:\\Mac\\Home\\Desktop\\프로젝트\\Mes_Project\\WinFormsApp2\\WinFormsApp2.csproj",
       "packagesPath": "C:\\Users\\sinjongdeog\\.nuget\\packages\\",
-      "outputPath": "C:\\Mac\\Home\\Desktop\\MES_Project\\Mes_Project\\WinFormsApp2\\obj\\",
+      "outputPath": "C:\\Mac\\Home\\Desktop\\프로젝트\\Mes_Project\\WinFormsApp2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2117,6 +2181,14 @@
             "target": "Package",
             "version": "[3.0.81, )"
           },
+          "NModbus.Serial": {
+            "target": "Package",
+            "version": "[3.0.81, )"
+          },
+          "NModbus4": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
           "System.IO.Ports": {
             "target": "Package",
             "version": "[9.0.0, )"
@@ -2148,5 +2220,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "프로젝트 대상 프레임워크 'net8.0-windows7.0' 대신 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1'을(를) 사용하여 패키지 'NModbus4 2.1.0'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "libraryId": "NModbus4",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

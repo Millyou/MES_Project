@@ -11,6 +11,8 @@
           "MQTTnet": "4.3.7.1207",
           "MQTTnet.Extensions.ManagedClient": "4.3.7.1207",
           "NModbus": "3.0.81",
+          "NModbus.Serial": "3.0.81",
+          "NModbus4": "2.1.0",
           "System.IO.Ports": "9.0.0",
           "System.Text.Json": "9.0.0"
         },
@@ -42,6 +44,26 @@
           "lib/net6.0/NModbus.dll": {
             "assemblyVersion": "3.0.81.0",
             "fileVersion": "3.0.81.0"
+          }
+        }
+      },
+      "NModbus.Serial/3.0.81": {
+        "dependencies": {
+          "NModbus": "3.0.81",
+          "System.IO.Ports": "9.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/NModbus.Serial.dll": {
+            "assemblyVersion": "3.0.81.0",
+            "fileVersion": "3.0.81.0"
+          }
+        }
+      },
+      "NModbus4/2.1.0": {
+        "runtime": {
+          "lib/net40/NModbus4.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -298,6 +320,20 @@
       "sha512": "sha512-EzKEp7CHD8ErBL36iMts+6IrZZ9FEqllaD7Y5XzhoRjlxt5yXRughQ1bxPs99QFYFkW5xfkANB0Qs1gAmYGP8Q==",
       "path": "nmodbus/3.0.81",
       "hashPath": "nmodbus.3.0.81.nupkg.sha512"
+    },
+    "NModbus.Serial/3.0.81": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6IISxvysZRaPkUJr52SVLdXqQwtrGtRmOnMbmSsnvjQnTxAUif/NihNC7Zbi4dvzUTDtlg3H7reZIBkUAHupjg==",
+      "path": "nmodbus.serial/3.0.81",
+      "hashPath": "nmodbus.serial.3.0.81.nupkg.sha512"
+    },
+    "NModbus4/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hGoxVFImyP2UC/vyaBjS3ZCLEqn3nqDWOfiePUfSTPpI4EhF4xUe6VnQ5W6m9oFK/6unKAaWQZh89WE+I31Spw==",
+      "path": "nmodbus4/2.1.0",
+      "hashPath": "nmodbus4.2.1.0.nupkg.sha512"
     },
     "runtime.android-arm.runtime.native.System.IO.Ports/9.0.0": {
       "type": "package",

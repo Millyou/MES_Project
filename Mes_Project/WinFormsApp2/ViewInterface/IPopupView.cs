@@ -6,7 +6,7 @@ namespace WinFormsApp2.ViewInterface
     {
         void PopulatePortCombo(List<string> ports);
         void SelectPort(string selectedPort);
-        void SetControlsEnabled(bool portComboEnabled, bool connectionBtnEnabled, bool disconnectBtnEnabled);
+        void SetControlsEnabled(bool portComboEnabled,bool portCombo2Enabled, bool connectionBtnEnabled, bool disconnectBtnEnabled);
         void ShowErrorMessage(string message);
         void ShowSuccessMessage(string message);
     }

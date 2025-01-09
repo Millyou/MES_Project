@@ -6,6 +6,8 @@ using WinFormsApp2.ViewInterface;
 using Microsoft.VisualBasic;
 using ActUtlTypeLib;
 using ActUtlType64Lib;
+using WinFormsApp2.View;
+
 
 namespace WinFormsApp2
 {
@@ -15,17 +17,30 @@ namespace WinFormsApp2
         private readonly PlcModel _plcModel;
         private readonly PlcFunction _plcFuntion;
         private bool isAutoMode = true; // 현재 모드를 저장할 변수
-
+        public static string? tempstr { get; set; }
         public static int mode { get; set; }
 
-        private readonly ActUtlType _plc = new ActUtlType(); // MX Component 객체
+
+
         public Form1()
         {
             InitializeComponent();
             _plcModel = new PlcModel(); // Plc 연결로직 생성
             _mainPresenter = new MainPresenter(this); //현재시간 불러오기
-
             _plcFuntion = new PlcFunction(this);
+            InverterFunction inverter = new InverterFunction();
+            mode = 0;
+            Popup.SettingsUpdated += () =>
+            {
+                if (Popup.StationNumber != null && Popup.SelectedPort != null)
+                {
+                    _plcFuntion.StartReading();
+                    MessageBox.Show("PLC 데이터 읽기가 시작되었습니다.");
+
+                }
+
+
+            };
         }
 
         public void UpdateLocalDateTime(string dateTime)
@@ -41,53 +56,46 @@ namespace WinFormsApp2
 
         private void StartBt_Click(object sender, EventArgs e)
         {
-            if (Popup.StationNumber != null)
+            if (Popup.StationNumber != null && Popup.SelectedTempPort != null)
             {
-                //EndBt.Enabled = true;
-                //StartBt.Enabled = false;
-                StartBt.BackColor = Color.Red;
-                EndBt.BackColor = Color.FromArgb(224, 224, 224);
-                MessageBox.Show("생산이 시작됩니다.");
-                _plcFuntion.StartReading(); //데이터 불러오기 시작(별도 쓰레드)
-                startLbl.Text = DateTime.Now.ToString("HH:mm:ss");
-                
+                if (PlcFunction.pvvalue > PlcFunction.svvalue - 10)
+                {
+                    StartBt.BackColor = Color.Red;
+                    EndBt.BackColor = Color.FromArgb(224, 224, 224);
+                    MessageBox.Show("생산이 시작됩니다.");
+                    PlcFunction._plc.SetDevice("M10", 1);
+                    StartBt.Enabled = false;
+                }
+                else MessageBox.Show("사출기 온도를 충분히 올려주십시오.");
+
             }
             else MessageBox.Show("PLC 연결 상태를 확인 해주세요.");
         }
 
         private void EndBt_Click(object sender, EventArgs e)
         {
-            //if (StartBt.Enabled != true)
-            //{
-                stopLbl.Text = DateTime.Now.ToString("HH:mm:ss");
-                //EndBt.Enabled = false;
-                //StartBt.Enabled = true;
+            if (Popup.StationNumber != null && Popup.SelectedTempPort != null)
+            {
                 StartBt.BackColor = Color.FromArgb(224, 224, 224);
                 EndBt.BackColor = Color.Red;
-                _plcFuntion.StopReading(); //데이터 불러오기 종료
                 MessageBox.Show("생산이 종료됩니다.");
-            //}
-            //else MessageBox.Show("현재 생산이 진행중인지 확인 해주세요.");
-
+                PlcFunction._plc.SetDevice("M11", 1);
+                EndBt.Enabled = false;
+            }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             int tempValue = trackBar1.Value;
-            tempLbl.Text = $"온도: {tempValue}°C";
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-           
+            tempLbl.Text = $"{tempValue}";
         }
 
         private void togglebtn_Click(object sender, EventArgs e)
         {
             // 상태 변경 (토글)
             isAutoMode = !isAutoMode;
-            
-            if (Popup.StationNumber != null)
+
+            if (Popup.StationNumber != null && Popup.SelectedTempPort != null)
             {
 
                 // 상태에 따라 동작 변경
@@ -97,6 +105,7 @@ namespace WinFormsApp2
                     togglebtn.BackColor = Color.Green; // 색상 변경
                     MessageBox.Show("자동 모드로 전환되었습니다.");
                     mode = 1;
+                    PlcFunction._plc.SetDevice("M12", mode);
                 }
                 else
                 {
@@ -104,9 +113,38 @@ namespace WinFormsApp2
                     togglebtn.BackColor = Color.Orange; // 색상 변경
                     MessageBox.Show("수동 모드로 전환되었습니다.");
                     mode = 0;
+                    PlcFunction._plc.SetDevice("M12", mode);
                 }
             }
             else MessageBox.Show("PLC 연결 상태 및 라인을 정지 후 전환 바랍니다.");
+        }
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            var login = new Login(); // 팝업창 들어가기(station초기화)
+            login.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Popup.SelectedTempPort != null)
+            {
+                if (tempLbl.Text == "-") { MessageBox.Show("온도를 지정하세요."); }
+                else
+                {
+                    tempstr = tempLbl.Text;
+                    _plcFuntion.setTemp(); // setTemp 메서드 호출
+                    trackBar1.Value = 200;
+                    tempLbl.Text = "-";
+                }
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Order order = new Order();
+            order.ShowDialog();
         }
     }
 }

@@ -11,6 +11,11 @@ using WinFormsApp2.Presenter;
 using MQTTnet.Protocol;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using MQTTnet.Server;
+using System.IO.Ports;
+using NModbus.Device;
+using NModbus;
+using Modbus.Device;
+using System.Diagnostics.Metrics;
 
 public static class CurrentData
 {
@@ -26,23 +31,25 @@ public static class CurrentData
 
 public class PlcFunction
 {
-    private readonly ActUtlType _plc = new ActUtlType(); // MX Component 객체
-    private CancellationTokenSource _cts;
+    public static readonly ActUtlType _plc = new ActUtlType(); // MX Component 객체
+    public static CancellationTokenSource _cts;
     private Form1 _form;
     public int result;
     private CurrentDataPublisher _dataPublisher;
+    public InverterFunction inverter = new InverterFunction();
 
-
+    // N.PV의 주소: 4x 00002 (Modbus 주소는 1부터 시작)
+    private ushort readAddress = 1; // N.PV의 절대 번지 00002는 여기서 1로 설정
+    private ushort numRegisters = 2; // 한 번에 읽을 레지스터 개수
+    public static int pvvalue = (int)values[0];
+    public static int svvalue = (int)values[1];
     public PlcFunction(Form1 form)
     {
         _form = form;
         _dataPublisher = new CurrentDataPublisher(); // MQTT Publisher 초기화
         
+
     }
-
-
-
-
     public async void StartReading()
     {
         //if (_cts != null)
@@ -50,6 +57,8 @@ public class PlcFunction
         //    MessageBox.Show("PLC 데이터 읽기가 이미 실행 중입니다.");
         //    return;
         //}
+
+
 
         try
         {
@@ -62,9 +71,7 @@ public class PlcFunction
             {
                 throw new InvalidOperationException("PLC와 연결되지 않았습니다. 연결 상태를 확인하세요.");
             }
-            
-               
-        
+
 
             _cts = new CancellationTokenSource();
             Task.Run(() => ReadPlcData(_cts.Token), _cts.Token);
@@ -82,16 +89,16 @@ public class PlcFunction
         //    MessageBox.Show("PLC 데이터 읽기가 실행 중이지 않습니다.");
         //    return;
         //}
-        
+
         try
         {
             var dataPublisher = new CurrentDataPublisher();
             await dataPublisher.DisconnectAsync();
-            _plc.SetDevice("M11", 1);
+            MessageBox.Show("PLC 데이터 읽기가 중지되었습니다.");
             _cts.Cancel();
             _cts = null;
             _plc.Close();
-            MessageBox.Show("PLC 데이터 읽기가 중지되었습니다.");
+            serialPort.Close();
         }
         catch (Exception ex)
         {
@@ -103,15 +110,18 @@ public class PlcFunction
     {
         try
         {
-            
 
-            _plc.SetDevice("M12", Form1.mode);
-            _plc.SetDevice("M10", 1);
+
+            serialPort.Open();
+           
+            // Modbus Master 생성
+            master = Modbus.Device.ModbusSerialMaster.CreateRtu(serialPort);
+            
             int temp;
 
             while (!token.IsCancellationRequested)
             {
-    
+
 
                 // PLC 데이터 읽기
                 _plc.GetDevice("X20", out temp);
@@ -138,7 +148,7 @@ public class PlcFunction
                 _plc.GetDevice("Y43", out temp);
                 CurrentData.Y43 = temp;
 
-                
+                values = master.ReadHoldingRegisters(slaveId, readAddress, numRegisters); // 온도값 가져오기
 
                 // UI 업데이트는 Invoke를 사용
                 _form.Invoke((MethodInvoker)(() =>
@@ -149,14 +159,20 @@ public class PlcFunction
                     {
                         result = number - (CurrentData.D2 ?? 0);
                         _form.label8.Text = result.ToString();
+                        
                     }
-
+                    _form.pvLbl.Text = values[0].ToString();
+                    _form.svLbl.Text = values[1].ToString();
                     UpdateTableColors();
                 }));
 
                 // CurrentData를 MQTT로 전송
                 await _dataPublisher.PublishCurrentDataAsync();
 
+                //-----온도 확인후 인버터 작동 및 종료----
+                
+                if (pvvalue < svvalue - 10){inverter.Start();}
+                else { inverter.Stop(); }
 
 
                 Thread.Sleep(500); // 1초 대기
@@ -200,4 +216,38 @@ public class PlcFunction
             _form.tableLayoutPanel19.BackColor = Color.Red;
         }
     }
-}
+
+    public void setTemp()
+    {
+
+        ushort writeAddress = 301; // SV1의 절대 번지
+        ushort writeValue = ushort.Parse(Form1.tempstr); // 설정하고자 하는 값 (예: 300도)
+        ushort svnoAddress = 300; // SV1의 절대 번지
+        ushort svnoValue = 1; // 설정하고자 하는 값 (예: 1번셋팅값 고정)
+        try
+        {
+            // 시리얼 포트 초기화
+            master.WriteSingleRegister(slaveId, writeAddress, writeValue);
+            master.WriteSingleRegister(slaveId, svnoAddress, svnoValue);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"오류 발생: {ex.Message}");
+        }
+    }
+
+    public static int baudRate = 9600;      // 장치에 맞는 BaudRate 설정
+    public static Parity parity = Parity.None;
+    public static int dataBits = 8;
+    public static StopBits stopBits = StopBits.One;
+    public static Modbus.Device.IModbusSerialMaster master;
+    public static ushort[] values;
+    public static byte slaveId = 1; // 변경 필요
+    public static string portName = Popup.SelectedTempPort; // 실제 장치 포트로 변경
+    public static SerialPort serialPort = new SerialPort(portName, baudRate, parity, dataBits, stopBits);
+} 
+        
+
+    
+
+    
