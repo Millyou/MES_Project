@@ -29,7 +29,7 @@ namespace WinFormsApp2.View
         private async void button1_Click(object sender, EventArgs e)
         {
             using var httpClient = new HttpClient { BaseAddress = new Uri("http://13.125.114.64:5282/api/") };
-
+            Form1 form = new Form1();
             try
             {
                 // API 요청 보내기
@@ -53,7 +53,9 @@ namespace WinFormsApp2.View
                             // 제품코드(Key) -> 첫 번째 열, 목표수량(Value) -> 두 번째 열
                             dataGridView1.Rows.Add(kvp.Key, kvp.Value);
                         }
-
+                        
+                        form.StartBt.Enabled = true;
+                        form.EndBt.Enabled = true;
                         MessageBox.Show("데이터를 성공적으로 가져왔습니다.", "성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else

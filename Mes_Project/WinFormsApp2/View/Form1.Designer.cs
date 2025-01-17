@@ -143,7 +143,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.BackColor = Color.Teal;
+            tableLayoutPanel1.BackColor = Color.Black;
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
@@ -162,6 +162,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.FromArgb(25, 44, 90);
             tableLayoutPanel2.ColumnCount = 5;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
@@ -215,9 +216,9 @@ namespace WinFormsApp2
             label1.Location = new Point(4, 6);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(98, 32);
+            label1.Size = new Size(149, 32);
             label1.TabIndex = 0;
-            label1.Text = "현대INJ";
+            label1.Text = "HyunDaiINJ";
             // 
             // PopupBtn
             // 
@@ -247,7 +248,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel3
             // 
-            tableLayoutPanel3.BackColor = Color.FromArgb(0, 64, 64);
+            tableLayoutPanel3.BackColor = Color.FromArgb(51, 54, 63);
             tableLayoutPanel3.ColumnCount = 4;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
@@ -268,6 +269,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel7
             // 
+            tableLayoutPanel7.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel7.ColumnCount = 2;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -339,6 +341,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel8
             // 
+            tableLayoutPanel8.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel8.ColumnCount = 2;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -409,6 +412,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel9
             // 
+            tableLayoutPanel9.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel9.ColumnCount = 2;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -468,7 +472,7 @@ namespace WinFormsApp2
             // pictureBox4
             // 
             pictureBox4.Anchor = AnchorStyles.None;
-            pictureBox4.Image = Properties.Resources.Barcode;
+            pictureBox4.Image = Properties.Resources.Qrcode;
             pictureBox4.Location = new Point(20, 4);
             pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
@@ -479,6 +483,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel10
             // 
+            tableLayoutPanel10.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel10.ColumnCount = 2;
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -549,15 +554,15 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel4
             // 
-            tableLayoutPanel4.BackColor = Color.FromArgb(0, 64, 64);
-            tableLayoutPanel4.ColumnCount = 4;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 257F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 14F));
+            tableLayoutPanel4.BackColor = Color.Black;
+            tableLayoutPanel4.ColumnCount = 3;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 261F));
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 395F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 315F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Controls.Add(tableLayoutPanel5, 0, 0);
-            tableLayoutPanel4.Controls.Add(tableLayoutPanel11, 2, 0);
-            tableLayoutPanel4.Controls.Add(tableLayoutPanel21, 3, 0);
+            tableLayoutPanel4.Controls.Add(tableLayoutPanel11, 1, 0);
+            tableLayoutPanel4.Controls.Add(tableLayoutPanel21, 2, 0);
             tableLayoutPanel4.Dock = DockStyle.Fill;
             tableLayoutPanel4.Location = new Point(4, 147);
             tableLayoutPanel4.Margin = new Padding(4);
@@ -569,7 +574,7 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel5
             // 
-            tableLayoutPanel5.BackColor = Color.Teal;
+            tableLayoutPanel5.BackColor = Color.FromArgb(54, 57, 58);
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel5.Controls.Add(togglebtn, 0, 2);
@@ -583,18 +588,19 @@ namespace WinFormsApp2
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel5.Size = new Size(249, 500);
+            tableLayoutPanel5.Size = new Size(253, 500);
             tableLayoutPanel5.TabIndex = 0;
             // 
             // togglebtn
             // 
-            togglebtn.BackColor = Color.FromArgb(224, 224, 224);
+            togglebtn.BackColor = Color.FromArgb(82, 108, 137);
             togglebtn.Dock = DockStyle.Fill;
             togglebtn.Font = new Font("맑은 고딕", 15.75F, FontStyle.Bold);
+            togglebtn.ForeColor = Color.White;
             togglebtn.Location = new Point(4, 336);
             togglebtn.Margin = new Padding(4);
             togglebtn.Name = "togglebtn";
-            togglebtn.Size = new Size(241, 160);
+            togglebtn.Size = new Size(245, 160);
             togglebtn.TabIndex = 4;
             togglebtn.Text = "신규 Lot 발급";
             togglebtn.UseVisualStyleBackColor = false;
@@ -602,13 +608,14 @@ namespace WinFormsApp2
             // 
             // EndBt
             // 
-            EndBt.BackColor = Color.FromArgb(224, 224, 224);
+            EndBt.BackColor = Color.FromArgb(82, 108, 137);
             EndBt.Dock = DockStyle.Fill;
             EndBt.Font = new Font("맑은 고딕", 15.75F, FontStyle.Bold);
+            EndBt.ForeColor = Color.White;
             EndBt.Location = new Point(4, 170);
             EndBt.Margin = new Padding(4);
             EndBt.Name = "EndBt";
-            EndBt.Size = new Size(241, 158);
+            EndBt.Size = new Size(245, 158);
             EndBt.TabIndex = 3;
             EndBt.Text = "정지";
             EndBt.UseVisualStyleBackColor = false;
@@ -616,13 +623,14 @@ namespace WinFormsApp2
             // 
             // StartBt
             // 
-            StartBt.BackColor = Color.FromArgb(224, 224, 224);
+            StartBt.BackColor = Color.FromArgb(82, 108, 137);
             StartBt.Dock = DockStyle.Fill;
             StartBt.Font = new Font("맑은 고딕", 15.75F, FontStyle.Bold);
+            StartBt.ForeColor = Color.White;
             StartBt.Location = new Point(4, 4);
             StartBt.Margin = new Padding(4);
             StartBt.Name = "StartBt";
-            StartBt.Size = new Size(241, 158);
+            StartBt.Size = new Size(245, 158);
             StartBt.TabIndex = 0;
             StartBt.Text = "시작";
             StartBt.UseVisualStyleBackColor = false;
@@ -630,32 +638,32 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel11
             // 
-            tableLayoutPanel11.BackColor = Color.Teal;
+            tableLayoutPanel11.BackColor = Color.FromArgb(54, 57, 58);
             tableLayoutPanel11.ColumnCount = 1;
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel11.Controls.Add(pictureBox1, 0, 0);
             tableLayoutPanel11.Controls.Add(tableLayoutPanel12, 0, 1);
             tableLayoutPanel11.Controls.Add(panel4, 0, 2);
             tableLayoutPanel11.Dock = DockStyle.Fill;
-            tableLayoutPanel11.Location = new Point(275, 4);
+            tableLayoutPanel11.Location = new Point(265, 4);
             tableLayoutPanel11.Margin = new Padding(4);
             tableLayoutPanel11.Name = "tableLayoutPanel11";
             tableLayoutPanel11.RowCount = 3;
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 52.4324341F));
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 19.0990982F));
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 28.2882881F));
-            tableLayoutPanel11.Size = new Size(555, 500);
+            tableLayoutPanel11.Size = new Size(645, 500);
             tableLayoutPanel11.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(103, 170, 179);
+            pictureBox1.BackColor = Color.FromArgb(69, 90, 113);
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.lastmain;
+            pictureBox1.Image = Properties.Resources.belt2;
             pictureBox1.Location = new Point(4, 4);
             pictureBox1.Margin = new Padding(4, 4, 4, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(547, 258);
+            pictureBox1.Size = new Size(637, 258);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -675,12 +683,12 @@ namespace WinFormsApp2
             tableLayoutPanel12.Name = "tableLayoutPanel12";
             tableLayoutPanel12.RowCount = 1;
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel12.Size = new Size(547, 87);
+            tableLayoutPanel12.Size = new Size(637, 87);
             tableLayoutPanel12.TabIndex = 2;
             // 
             // tableLayoutPanel17
             // 
-            tableLayoutPanel17.BackColor = Color.DarkSlateGray;
+            tableLayoutPanel17.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel17.ColumnCount = 1;
             tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel17.Controls.Add(label15, 0, 0);
@@ -690,7 +698,7 @@ namespace WinFormsApp2
             tableLayoutPanel17.Name = "tableLayoutPanel17";
             tableLayoutPanel17.RowCount = 1;
             tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel17.Size = new Size(174, 79);
+            tableLayoutPanel17.Size = new Size(204, 79);
             tableLayoutPanel17.TabIndex = 0;
             // 
             // label15
@@ -699,7 +707,7 @@ namespace WinFormsApp2
             label15.AutoSize = true;
             label15.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label15.ForeColor = SystemColors.ButtonHighlight;
-            label15.Location = new Point(48, 19);
+            label15.Location = new Point(63, 19);
             label15.Margin = new Padding(4, 0, 4, 0);
             label15.Name = "label15";
             label15.Size = new Size(78, 41);
@@ -708,17 +716,17 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel18
             // 
-            tableLayoutPanel18.BackColor = Color.DarkSlateGray;
+            tableLayoutPanel18.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel18.ColumnCount = 1;
             tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel18.Controls.Add(label16, 0, 0);
             tableLayoutPanel18.Dock = DockStyle.Fill;
-            tableLayoutPanel18.Location = new Point(186, 4);
+            tableLayoutPanel18.Location = new Point(216, 4);
             tableLayoutPanel18.Margin = new Padding(4);
             tableLayoutPanel18.Name = "tableLayoutPanel18";
             tableLayoutPanel18.RowCount = 1;
             tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel18.Size = new Size(174, 79);
+            tableLayoutPanel18.Size = new Size(204, 79);
             tableLayoutPanel18.TabIndex = 1;
             // 
             // label16
@@ -727,7 +735,7 @@ namespace WinFormsApp2
             label16.AutoSize = true;
             label16.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label16.ForeColor = SystemColors.ButtonHighlight;
-            label16.Location = new Point(48, 19);
+            label16.Location = new Point(63, 19);
             label16.Margin = new Padding(4, 0, 4, 0);
             label16.Name = "label16";
             label16.Size = new Size(78, 41);
@@ -736,17 +744,17 @@ namespace WinFormsApp2
             // 
             // tableLayoutPanel19
             // 
-            tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+            tableLayoutPanel19.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel19.ColumnCount = 1;
             tableLayoutPanel19.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel19.Controls.Add(label17, 0, 0);
             tableLayoutPanel19.Dock = DockStyle.Fill;
-            tableLayoutPanel19.Location = new Point(368, 4);
+            tableLayoutPanel19.Location = new Point(428, 4);
             tableLayoutPanel19.Margin = new Padding(4);
             tableLayoutPanel19.Name = "tableLayoutPanel19";
             tableLayoutPanel19.RowCount = 1;
             tableLayoutPanel19.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel19.Size = new Size(175, 79);
+            tableLayoutPanel19.Size = new Size(205, 79);
             tableLayoutPanel19.TabIndex = 2;
             // 
             // label17
@@ -755,7 +763,7 @@ namespace WinFormsApp2
             label17.AutoSize = true;
             label17.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label17.ForeColor = SystemColors.ButtonHighlight;
-            label17.Location = new Point(48, 19);
+            label17.Location = new Point(63, 19);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
             label17.Size = new Size(78, 41);
@@ -769,7 +777,7 @@ namespace WinFormsApp2
             panel4.Location = new Point(4, 361);
             panel4.Margin = new Padding(4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(547, 135);
+            panel4.Size = new Size(637, 135);
             panel4.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -791,7 +799,7 @@ namespace WinFormsApp2
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel6.Size = new Size(547, 135);
+            tableLayoutPanel6.Size = new Size(637, 135);
             tableLayoutPanel6.TabIndex = 0;
             // 
             // panel10
@@ -799,21 +807,22 @@ namespace WinFormsApp2
             panel10.BorderStyle = BorderStyle.FixedSingle;
             panel10.Controls.Add(label8);
             panel10.Dock = DockStyle.Fill;
-            panel10.Location = new Point(277, 94);
+            panel10.Location = new Point(322, 94);
             panel10.Margin = new Padding(4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(266, 37);
+            panel10.Size = new Size(311, 37);
             panel10.TabIndex = 5;
             // 
             // label8
             // 
+            label8.BackColor = Color.FromArgb(69, 90, 113);
             label8.Dock = DockStyle.Fill;
             label8.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label8.ForeColor = Color.Yellow;
             label8.Location = new Point(0, 0);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(264, 35);
+            label8.Size = new Size(309, 35);
             label8.TabIndex = 1;
             label8.Text = "-";
             label8.TextAlign = ContentAlignment.MiddleCenter;
@@ -826,18 +835,19 @@ namespace WinFormsApp2
             panel9.Location = new Point(4, 94);
             panel9.Margin = new Padding(4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(265, 37);
+            panel9.Size = new Size(310, 37);
             panel9.TabIndex = 4;
             // 
             // label12
             // 
+            label12.BackColor = Color.FromArgb(69, 90, 113);
             label12.Dock = DockStyle.Fill;
             label12.Font = new Font("맑은 고딕", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label12.ForeColor = SystemColors.ButtonHighlight;
             label12.Location = new Point(0, 0);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(263, 35);
+            label12.Size = new Size(308, 35);
             label12.TabIndex = 2;
             label12.Text = "잔여 수량";
             label12.TextAlign = ContentAlignment.MiddleCenter;
@@ -847,21 +857,22 @@ namespace WinFormsApp2
             panel8.BorderStyle = BorderStyle.FixedSingle;
             panel8.Controls.Add(label14);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(277, 49);
+            panel8.Location = new Point(322, 49);
             panel8.Margin = new Padding(4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(266, 37);
+            panel8.Size = new Size(311, 37);
             panel8.TabIndex = 3;
             // 
             // label14
             // 
+            label14.BackColor = Color.FromArgb(69, 90, 113);
             label14.Dock = DockStyle.Fill;
             label14.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label14.ForeColor = Color.Yellow;
             label14.Location = new Point(0, 0);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
-            label14.Size = new Size(264, 35);
+            label14.Size = new Size(309, 35);
             label14.TabIndex = 1;
             label14.Text = "-";
             label14.TextAlign = ContentAlignment.MiddleCenter;
@@ -874,18 +885,19 @@ namespace WinFormsApp2
             panel7.Location = new Point(4, 49);
             panel7.Margin = new Padding(4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(265, 37);
+            panel7.Size = new Size(310, 37);
             panel7.TabIndex = 2;
             // 
             // label2
             // 
+            label2.BackColor = Color.FromArgb(69, 90, 113);
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("맑은 고딕", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(0, 0);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(263, 35);
+            label2.Size = new Size(308, 35);
             label2.TabIndex = 2;
             label2.Text = "Lot 생산 수량";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -895,21 +907,22 @@ namespace WinFormsApp2
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(label13);
             panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(277, 4);
+            panel6.Location = new Point(322, 4);
             panel6.Margin = new Padding(4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(266, 37);
+            panel6.Size = new Size(311, 37);
             panel6.TabIndex = 1;
             // 
             // label13
             // 
+            label13.BackColor = Color.FromArgb(69, 90, 113);
             label13.Dock = DockStyle.Fill;
             label13.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
             label13.ForeColor = Color.Yellow;
             label13.Location = new Point(0, 0);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
-            label13.Size = new Size(264, 35);
+            label13.Size = new Size(309, 35);
             label13.TabIndex = 1;
             label13.Text = "-";
             label13.TextAlign = ContentAlignment.MiddleCenter;
@@ -922,38 +935,40 @@ namespace WinFormsApp2
             panel5.Location = new Point(4, 4);
             panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(265, 37);
+            panel5.Size = new Size(310, 37);
             panel5.TabIndex = 0;
             // 
             // label11
             // 
+            label11.BackColor = Color.FromArgb(69, 90, 113);
             label11.Dock = DockStyle.Fill;
             label11.Font = new Font("맑은 고딕", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label11.ForeColor = SystemColors.ButtonHighlight;
             label11.Location = new Point(0, 0);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(263, 35);
+            label11.Size = new Size(308, 35);
             label11.TabIndex = 1;
             label11.Text = "계획 수량";
             label11.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel21
             // 
+            tableLayoutPanel21.BackColor = Color.FromArgb(54, 57, 58);
             tableLayoutPanel21.ColumnCount = 1;
             tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel21.Controls.Add(panel3, 0, 2);
             tableLayoutPanel21.Controls.Add(panel2, 0, 1);
             tableLayoutPanel21.Controls.Add(panel1, 0, 0);
             tableLayoutPanel21.Dock = DockStyle.Fill;
-            tableLayoutPanel21.Location = new Point(838, 4);
+            tableLayoutPanel21.Location = new Point(918, 4);
             tableLayoutPanel21.Margin = new Padding(4);
             tableLayoutPanel21.Name = "tableLayoutPanel21";
             tableLayoutPanel21.RowCount = 3;
             tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel21.Size = new Size(387, 500);
+            tableLayoutPanel21.Size = new Size(307, 500);
             tableLayoutPanel21.TabIndex = 3;
             // 
             // panel3
@@ -964,11 +979,12 @@ namespace WinFormsApp2
             panel3.Location = new Point(4, 336);
             panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(379, 160);
+            panel3.Size = new Size(299, 160);
             panel3.TabIndex = 2;
             // 
             // tableLayoutPanel24
             // 
+            tableLayoutPanel24.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel24.ColumnCount = 1;
             tableLayoutPanel24.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel24.Controls.Add(tempLbl, 0, 0);
@@ -982,7 +998,7 @@ namespace WinFormsApp2
             tableLayoutPanel24.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel24.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel24.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel24.Size = new Size(377, 158);
+            tableLayoutPanel24.Size = new Size(297, 158);
             tableLayoutPanel24.TabIndex = 1;
             tableLayoutPanel24.Text = "50";
             // 
@@ -992,7 +1008,7 @@ namespace WinFormsApp2
             tempLbl.AutoSize = true;
             tempLbl.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
             tempLbl.ForeColor = Color.White;
-            tempLbl.Location = new Point(173, 5);
+            tempLbl.Location = new Point(133, 5);
             tempLbl.Margin = new Padding(4, 0, 4, 0);
             tempLbl.Name = "tempLbl";
             tempLbl.Size = new Size(30, 41);
@@ -1006,7 +1022,7 @@ namespace WinFormsApp2
             button2.Location = new Point(4, 108);
             button2.Margin = new Padding(4);
             button2.Name = "button2";
-            button2.Size = new Size(369, 46);
+            button2.Size = new Size(289, 46);
             button2.TabIndex = 6;
             button2.Text = "적용";
             button2.UseVisualStyleBackColor = true;
@@ -1020,7 +1036,7 @@ namespace WinFormsApp2
             trackBar1.Maximum = 200;
             trackBar1.Minimum = 50;
             trackBar1.Name = "trackBar1";
-            trackBar1.Size = new Size(373, 48);
+            trackBar1.Size = new Size(293, 48);
             trackBar1.TabIndex = 7;
             trackBar1.Value = 50;
             trackBar1.Scroll += trackBar1_Scroll;
@@ -1033,11 +1049,12 @@ namespace WinFormsApp2
             panel2.Location = new Point(4, 170);
             panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(379, 158);
+            panel2.Size = new Size(299, 158);
             panel2.TabIndex = 1;
             // 
             // tableLayoutPanel23
             // 
+            tableLayoutPanel23.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel23.ColumnCount = 1;
             tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel23.Controls.Add(svLbl, 0, 1);
@@ -1050,7 +1067,7 @@ namespace WinFormsApp2
             tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
-            tableLayoutPanel23.Size = new Size(377, 156);
+            tableLayoutPanel23.Size = new Size(297, 156);
             tableLayoutPanel23.TabIndex = 1;
             // 
             // svLbl
@@ -1059,7 +1076,7 @@ namespace WinFormsApp2
             svLbl.AutoSize = true;
             svLbl.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
             svLbl.ForeColor = Color.Yellow;
-            svLbl.Location = new Point(173, 96);
+            svLbl.Location = new Point(133, 96);
             svLbl.Margin = new Padding(4, 0, 4, 0);
             svLbl.Name = "svLbl";
             svLbl.Size = new Size(30, 41);
@@ -1072,7 +1089,7 @@ namespace WinFormsApp2
             label25.AutoSize = true;
             label25.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(119, 18);
+            label25.Location = new Point(79, 18);
             label25.Margin = new Padding(4, 0, 4, 0);
             label25.Name = "label25";
             label25.Size = new Size(138, 41);
@@ -1087,11 +1104,12 @@ namespace WinFormsApp2
             panel1.Location = new Point(4, 4);
             panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(379, 158);
+            panel1.Size = new Size(299, 158);
             panel1.TabIndex = 0;
             // 
             // tableLayoutPanel22
             // 
+            tableLayoutPanel22.BackColor = Color.FromArgb(69, 90, 113);
             tableLayoutPanel22.ColumnCount = 1;
             tableLayoutPanel22.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel22.Controls.Add(pvLbl, 0, 1);
@@ -1103,7 +1121,7 @@ namespace WinFormsApp2
             tableLayoutPanel22.RowCount = 2;
             tableLayoutPanel22.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel22.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel22.Size = new Size(377, 156);
+            tableLayoutPanel22.Size = new Size(297, 156);
             tableLayoutPanel22.TabIndex = 0;
             // 
             // pvLbl
@@ -1112,7 +1130,7 @@ namespace WinFormsApp2
             pvLbl.AutoSize = true;
             pvLbl.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
             pvLbl.ForeColor = Color.Yellow;
-            pvLbl.Location = new Point(173, 96);
+            pvLbl.Location = new Point(133, 96);
             pvLbl.Margin = new Padding(4, 0, 4, 0);
             pvLbl.Name = "pvLbl";
             pvLbl.Size = new Size(30, 41);
@@ -1125,7 +1143,7 @@ namespace WinFormsApp2
             label23.AutoSize = true;
             label23.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label23.ForeColor = Color.White;
-            label23.Location = new Point(119, 18);
+            label23.Location = new Point(79, 18);
             label23.Margin = new Padding(4, 0, 4, 0);
             label23.Name = "label23";
             label23.Size = new Size(138, 41);
@@ -1136,7 +1154,7 @@ namespace WinFormsApp2
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
+            BackColor = SystemColors.Window;
             ClientSize = new Size(1237, 659);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(1);
@@ -1223,7 +1241,6 @@ namespace WinFormsApp2
         private Label label16;
         private Label label17;
         private TableLayoutPanel tableLayoutPanel21;
-        private Button StartBt;
         private Panel panel2;
         private Panel panel1;
         private Panel panel3;
@@ -1244,7 +1261,6 @@ namespace WinFormsApp2
         private Label tempLbl;
         private Button button2;
         private TrackBar trackBar1;
-        private Button EndBt;
         public Label label14;
         public Label label13;
         public Label label8;
@@ -1267,5 +1283,7 @@ namespace WinFormsApp2
         public Label label4;
         public Label Lotnumlbl;
         public Label label7;
+        public Button StartBt;
+        public Button EndBt;
     }
 }

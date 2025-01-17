@@ -32,10 +32,10 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             label1 = new Label();
             button1 = new Button();
+            button2 = new Button();
             dataGridView1 = new DataGridView();
             제품코드 = new DataGridViewTextBoxColumn();
             목표수량 = new DataGridViewTextBoxColumn();
-            button2 = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -54,28 +54,28 @@
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 8.917954F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 91.08205F));
-            tableLayoutPanel1.Size = new Size(830, 514);
+            tableLayoutPanel1.Size = new Size(487, 490);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.AutoSize = true;
-            tableLayoutPanel2.ColumnCount = 5;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 27.5F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 21.5496368F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.8595638F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            tableLayoutPanel2.ColumnCount = 4;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.52337F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35.094635F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.2394714F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.1425266F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Controls.Add(label1, 0, 0);
-            tableLayoutPanel2.Controls.Add(button1, 4, 0);
-            tableLayoutPanel2.Controls.Add(button2, 3, 0);
+            tableLayoutPanel2.Controls.Add(button1, 3, 0);
+            tableLayoutPanel2.Controls.Add(button2, 2, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(2, 2);
             tableLayoutPanel2.Margin = new Padding(2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(826, 41);
+            tableLayoutPanel2.Size = new Size(483, 39);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -86,7 +86,7 @@
             label1.Location = new Point(2, 0);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(161, 41);
+            label1.Size = new Size(119, 39);
             label1.TabIndex = 0;
             label1.Text = "작업지시";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -94,25 +94,36 @@
             // button1
             // 
             button1.Dock = DockStyle.Fill;
-            button1.Location = new Point(703, 2);
+            button1.Location = new Point(391, 2);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(121, 37);
+            button1.Size = new Size(90, 35);
             button1.TabIndex = 1;
             button1.Text = "조회";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Dock = DockStyle.Fill;
+            button2.Location = new Point(295, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(91, 33);
+            button2.TabIndex = 2;
+            button2.Text = "적용";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { 제품코드, 목표수량 });
             dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(2, 47);
+            dataGridView1.Location = new Point(2, 45);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(826, 465);
+            dataGridView1.Size = new Size(483, 443);
             dataGridView1.TabIndex = 1;
             // 
             // 제품코드
@@ -129,22 +140,11 @@
             목표수량.Name = "목표수량";
             목표수량.Width = 200;
             // 
-            // button2
-            // 
-            button2.Dock = DockStyle.Fill;
-            button2.Location = new Point(573, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 35);
-            button2.TabIndex = 2;
-            button2.Text = "적용";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // Order
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(830, 514);
+            ClientSize = new Size(487, 490);
             Controls.Add(tableLayoutPanel1);
             Margin = new Padding(2);
             Name = "Order";

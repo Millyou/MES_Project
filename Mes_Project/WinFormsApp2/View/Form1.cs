@@ -39,6 +39,9 @@ namespace WinFormsApp2
             tempLbl.Text = "50";
             PopupBtn.Enabled = false;
             button1.Enabled = false;
+            
+
+            //
             //Popup.ResetUpdateEvent();
             Popup.SettingsUpdated += () =>
             {
@@ -46,7 +49,6 @@ namespace WinFormsApp2
                 {
 
                     _plcFuntion.StartReading();
-                    PlcFunction._plc.SetDevice("M11", 1);
                     Console.WriteLine("PLC 데이터 읽기가 시작되었습니다.");
                     label4.Text = "ip0" + Popup.StationNumber.ToString();
                     EndBt.Enabled = false;
@@ -81,6 +83,20 @@ namespace WinFormsApp2
                 Lotnumlbl.Text = Products.LotNum;
 
             };
+            Popup.Disconnectevent += () =>
+            {
+
+                label4.Text = "-";
+                label7.Text = "-";
+                Lotnumlbl.Text = "-";
+                Userid.Text = "-";
+                label13.Text = "-";
+                label14.Text = "-";
+                label8.Text = "-";
+                pvLbl.Text = "-";
+                svLbl.Text = "-";
+
+            };
 
         }
 
@@ -97,7 +113,7 @@ namespace WinFormsApp2
 
         private void StartBt_Click(object sender, EventArgs e)
         {
-            if (Popup.StationNumber != null && Popup.SelectedTempPort != null)
+            if (Popup.StationNumber != null && Popup.SelectedTempPort != null && Products.PartId !=null)
             {
                 if (PlcFunction.pvvalue < PlcFunction.svvalue - 10)
                 {
@@ -107,13 +123,13 @@ namespace WinFormsApp2
                 else
                 {
                     StartBt.BackColor = Color.Red;
-                    EndBt.BackColor = Color.FromArgb(224, 224, 224);
+                    EndBt.BackColor = Color.FromArgb(82, 108, 137);
                     MessageBox.Show("생산이 시작됩니다.");
                     PlcFunction._plc.SetDevice("M12", Popup.mode);
                     PlcFunction._plc.SetDevice("M10", 1);
                     StartBt.Enabled = false;
                     EndBt.Enabled = true;
-
+                    
                     // 0.5초마다 반복작업 실행
                     _cts = new CancellationTokenSource();
                     var cancellationToken = _cts.Token;
@@ -186,7 +202,7 @@ namespace WinFormsApp2
                 {
 
 
-                    StartBt.BackColor = Color.FromArgb(224, 224, 224);
+                    StartBt.BackColor = Color.FromArgb(82, 108, 137);
                     EndBt.BackColor = Color.Red;
                     MessageBox.Show("생산이 종료됩니다.");
                     PlcFunction._plc.SetDevice("M11", 1);
@@ -261,6 +277,7 @@ namespace WinFormsApp2
                     tempLbl.Text = "50";
                 }
             }
+            
 
         }
 
@@ -268,13 +285,15 @@ namespace WinFormsApp2
         {
             var order = new Order();
             order.ShowDialog();
+
+            
         }
 
         private async void togglebtn_Click(object sender, EventArgs e)
         {
             if (StartBt.Enabled == true)
-            { 
-                //PlcFunction._plc.SetDevice("D2", 0);
+            {
+                PlcFunction._plc.SetDevice("D2", 0);
 
                 using var httpClient = new HttpClient { BaseAddress = new Uri("http://13.125.114.64:5282/api/") };
 
@@ -300,16 +319,17 @@ namespace WinFormsApp2
                             Products.LotNum = lotIdElement.GetString();
                         }
                     }
+                    LodtUpdated.Invoke();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"lot 생성중 오류 발생: {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                LodtUpdated.Invoke();
+                
 
             }
             else MessageBox.Show("정지후 수정 바랍니다.");
-
+            
             
 
         }

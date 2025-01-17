@@ -87,6 +87,9 @@ public class PlcFunction
             Task.Run(() => ReadPlcData(_cts.Token), _cts.Token);
 
             serialPort.Open();
+            InverterFunction inverter = new InverterFunction();
+            inverter.Deceleration(); //인버터 감속
+            inverter.SetFrequency(); //인버터 60hz 적용
 
             // Modbus Master 생성
             master = Modbus.Device.ModbusSerialMaster.CreateRtu(serialPort);
@@ -166,7 +169,8 @@ public class PlcFunction
         {
             int temp;
             stream = await SocketClient.ConnectToServerAsync(serverAddress, port);
-
+            PlcFunction._plc.SetDevice("D2", 0);
+            PlcFunction._plc.SetDevice("M11", 1);
             // Start socket client with the created object
 
 
@@ -247,26 +251,26 @@ public class PlcFunction
     {
         if (CurrentData.Y41 == 1 && CurrentData.Y42 == 1 && CurrentData.Y43 == 1)
         {
-            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
-            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
-            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel17.BackColor = Color.FromArgb(69, 90, 113);
+            _form.tableLayoutPanel18.BackColor = Color.FromArgb(69, 90, 113);
+            _form.tableLayoutPanel19.BackColor = Color.FromArgb(69, 90, 113);
         }
         else if (CurrentData.Y41 == 1)
         {
             _form.tableLayoutPanel17.BackColor = Color.Red;
-            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
-            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel18.BackColor = Color.FromArgb(69, 90, 113);
+            _form.tableLayoutPanel19.BackColor = Color.FromArgb(69, 90, 113);
         }
         else if (CurrentData.Y42 == 1)
         {
-            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel17.BackColor = Color.FromArgb(69, 90, 113);
             _form.tableLayoutPanel18.BackColor = Color.Red;
-            _form.tableLayoutPanel19.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel19.BackColor = Color.FromArgb(69, 90, 113);
         }
         else if (CurrentData.Y43 == 1)
         {
-            _form.tableLayoutPanel17.BackColor = Color.DarkSlateGray;
-            _form.tableLayoutPanel18.BackColor = Color.DarkSlateGray;
+            _form.tableLayoutPanel17.BackColor = Color.FromArgb(69, 90, 113);
+            _form.tableLayoutPanel18.BackColor = Color.FromArgb(69, 90, 113);
             _form.tableLayoutPanel19.BackColor = Color.Red;
         }
     }

@@ -12,8 +12,6 @@ namespace WinFormsApp2.Presenter
         {
             
         }
- 
-        
         public void SetFrequency()
         {
             try
@@ -21,7 +19,7 @@ namespace WinFormsApp2.Presenter
                 ushort frequency = 5000;
                 ModbusFrame frequencyFrame = new ModbusFrame(0x02, 0x06, 0x0004, frequency);
                 SendFrame(frequencyFrame);
-                
+
             }
             catch (Exception ex)
             {
@@ -42,6 +40,8 @@ namespace WinFormsApp2.Presenter
                 Console.WriteLine($"오류 발생 (Deceleration): {ex.Message}");
             }
         }
+
+       
 
         public void Start()
         {

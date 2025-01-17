@@ -20,8 +20,11 @@
 
   <ItemGroup>
     <None Remove="Resources\Barcode.png" />
+    <None Remove="Resources\belt.jpg" />
+    <None Remove="Resources\belt2.png" />
     <None Remove="Resources\lastmain.png" />
     <None Remove="Resources\main.png" />
+    <None Remove="Resources\Qrcode.png" />
     <None Remove="Resources\Worker.png" />
   </ItemGroup>
 
@@ -50,10 +53,19 @@
     <Resource Include="Resources\Barcode.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\belt.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\belt2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\lastmain.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\main.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Qrcode.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Worker.png">

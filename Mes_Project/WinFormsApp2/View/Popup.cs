@@ -22,6 +22,7 @@ namespace WinFormsApp2
         public static string? SelectedPort { get; set; }
         public static bool IsPortComboEnabled { get; set; } = true; // 초기 상태는 true
         public static string? SelectedTempPort { get; set; }
+        public static event Action? Disconnectevent;
         public Popup(PlcModel plcModel)
         {
             InitializeComponent();
@@ -119,7 +120,7 @@ namespace WinFormsApp2
             modeCombo.Enabled = true;
             InverterFunction inverter = new InverterFunction();
             inverter.Stop();
-
+            Disconnectevent.Invoke();
     }
 
         public void SetControlsEnabled(bool portComboEnabled, bool portCombo2Enabled,bool modeComboEnable, bool connectionBtnEnabled, bool disconnectBtnEnabled)
@@ -143,10 +144,7 @@ namespace WinFormsApp2
         {
             SettingsUpdated?.Invoke();
 
-            InverterFunction inverter = new InverterFunction();
-            inverter.Deceleration();
-            inverter.SetFrequency(); //인버터 60hz 적용
-
+            
             this.Close(); // 팝업 창 닫기
         }
         public static void ResetUpdateEvent()
