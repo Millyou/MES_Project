@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b826e3ee-e556-42c8-88a6-15b64c2ae24d" name="변경" comment="" />
+    <list default="true" id="b826e3ee-e556-42c8-88a6-15b64c2ae24d" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinFormsApp2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinFormsApp2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/winformsapp2.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/WinFormsApp2/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WinFormsApp2/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/WinFormsApp2/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WinFormsApp2/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/Presenter/ApiToken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/Presenter/ApiToken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/View/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/View/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/View/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/View/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/WinFormsApp2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/WinFormsApp2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Debug/net8.0-windows/WinFormsApp2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/bin/x86/Release/net8.0-windows/WinFormsApp2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/WinFormsApp2.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/TempPE/Properties.Resources.Designer.cs.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/WinFormsApp2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/ref/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/ref/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/refint/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Debug/net8.0-windows/refint/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.Properties.Resources.resources" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.Properties.Resources.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/WinFormsApp2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/ref/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/ref/WinFormsApp2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/refint/WinFormsApp2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WinFormsApp2/obj/x86/Release/net8.0-windows/refint/WinFormsApp2.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,23 +60,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2rjfXhkc3uQp6FgznOJojo2D6aO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -36,6 +86,9 @@
       <option name="presentableId" value="Default" />
       <updated>1737077445746</updated>
       <workItem from="1737077447124" duration="9000" />
+      <workItem from="1737430379921" duration="239000" />
+      <workItem from="1737430801459" duration="26000" />
+      <workItem from="1737504594406" duration="3000" />
     </task>
     <servers />
   </component>

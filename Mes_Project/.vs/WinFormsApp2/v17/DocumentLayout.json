@@ -1,33 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\mes_project\\mes_project\\mes_project\\winformsapp2\\presenter\\plcfuntion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\presenter\\plcfuntion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\mes_project\\mes_project\\mes_project\\winformsapp2\\view\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\mes_project\\mes_project\\mes_project\\winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\34342821b456cb70c3a35ac3dacb299970658574eb10866c5287e1113ec6b40f\\MethodBaseInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\winformsapp2\\view\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\mes_project\\mes_project\\mes_project\\winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\popup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\mes_project\\mes_project\\mes_project\\winformsapp2\\view\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\view\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\winformsapp2\\presenter\\apitoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59BABA5D-E21F-4D7D-9F93-C1967BC2B009}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\presenter\\apitoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,97 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Popup.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Popup.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Popup.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Popup.cs",
-              "RelativeToolTip": "WinFormsApp2\\View\\Popup.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwHoAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\View\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\View\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp2\\View\\Form1.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwD4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:23:27.246Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-01-21T01:07:54.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Order.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Order.cs",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\View\\Order.cs",
               "RelativeDocumentMoniker": "WinFormsApp2\\View\\Order.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Order.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "WinFormsApp2\\View\\Order.cs [\uB514\uC790\uC778]",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\View\\Order.cs",
+              "RelativeToolTip": "WinFormsApp2\\View\\Order.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T05:48:56.39Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlcFuntion.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\Presenter\\PlcFuntion.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\Presenter\\PlcFuntion.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\Presenter\\PlcFuntion.cs",
-              "RelativeToolTip": "WinFormsApp2\\Presenter\\PlcFuntion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T05:30:02.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MethodBaseInvoker.cs",
-              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\34342821b456cb70c3a35ac3dacb299970658574eb10866c5287e1113ec6b40f\\MethodBaseInvoker.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\34342821b456cb70c3a35ac3dacb299970658574eb10866c5287e1113ec6b40f\\MethodBaseInvoker.cs",
-              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\34342821b456cb70c3a35ac3dacb299970658574eb10866c5287e1113ec6b40f\\MethodBaseInvoker.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\34342821b456cb70c3a35ac3dacb299970658574eb10866c5287e1113ec6b40f\\MethodBaseInvoker.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAArwK8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T05:22:51.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.Designer.cs",
-              "RelativeToolTip": "WinFormsApp2\\View\\Form1.Designer.cs",
-              "ViewState": "AgIAAKQCAAAAAAAAAAAowLMCAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:30:56.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.cs",
-              "RelativeToolTip": "WinFormsApp2\\View\\Form1.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA0wCkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:25:36.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:07:10.947Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.cs",
-              "RelativeDocumentMoniker": "WinFormsApp2\\View\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\mes_project\\MES_Project\\Mes_Project\\WinFormsApp2\\View\\Form1.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "WinFormsApp2\\View\\Form1.cs [\uB514\uC790\uC778]",
+              "Title": "ApiToken.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\Presenter\\ApiToken.cs",
+              "RelativeDocumentMoniker": "WinFormsApp2\\Presenter\\ApiToken.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\uCD5C\uC885 \uD504\uB85C\uC81D\uD2B8\\WinFormsApp2\\Presenter\\ApiToken.cs",
+              "RelativeToolTip": "WinFormsApp2\\Presenter\\ApiToken.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T03:20:21.292Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-01-21T01:06:47.281Z"
             }
           ]
         }

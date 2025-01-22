@@ -29,6 +29,7 @@ namespace WinFormsApp2.Presenter
 
         public static string? LotNum { get; set; } // lot 번호
         public static string? PartId { get; set; } // lot 번호Planned Quantity
+        public static string? LineId { get; set; } // lot 번호Planned Quantity
         public static int? PlannQty { get; set; }
     }
 }

@@ -51,6 +51,7 @@ namespace WinFormsApp2
                     _plcFuntion.StartReading();
                     Console.WriteLine("PLC 데이터 읽기가 시작되었습니다.");
                     label4.Text = "ip0" + Popup.StationNumber.ToString();
+                    Products.LineId = label4.Text;
                     EndBt.Enabled = false;
                     
                 }
@@ -299,7 +300,7 @@ namespace WinFormsApp2
 
                 try
                 {
-                    var partId_Date = new { partId = Products.PartId, date = Order.todayDate };
+                    var partId_Date = new { partId = Products.PartId, lineId = Products.LineId, date = Order.todayDate };
 
                     // JSON 직렬화
                     string jsonContent = JsonSerializer.Serialize(partId_Date);

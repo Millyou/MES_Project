@@ -23,7 +23,6 @@ namespace WinFormsApp2.View
         {
             InitializeComponent();
             todayDate = DateTime.Now.ToString("yyyy-MM-dd"); // 오늘 날짜 데이터 확인 완료
-
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -103,7 +102,7 @@ namespace WinFormsApp2.View
 
                         try
                         {
-                            var partId_Date = new { partId = Products.PartId, date = todayDate };
+                            var partId_Date = new { partId = Products.PartId, lineId = Products.LineId, date = todayDate };
 
                             // JSON 직렬화
                             string jsonContent = JsonSerializer.Serialize(partId_Date);
